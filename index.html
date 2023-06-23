@@ -9,25 +9,25 @@
 <body>
     <div>
         <form action="" class="form" method="get">
-            <h1 class="form__title">Registration</h1>
+            <h1 class="form__title">Registration(Get)</h1>
             <div class="form__group">
                 <label for="" class="form__label">Name</label>
-                <input type="text" class="form__input" name="UserName">
+                <input type="text" class="form__input" name="UserName" required>
             </div>
 
             <div class="form__group">
                 <label for="" class="form__label">Email</label>
-                <input type="text" class="form__input" name="Email">
+                <input type="text" class="form__input" name="Email" required>
             </div>
 
             <div class="form__group">
                 <label for="" class="form__label">Password</label>
-                <input type="password" class="form__input" placeholder="Enter password" name="password">
+                <input type="password" class="form__input" placeholder="Enter password" name="password" required>
             </div>
 
             <div class="form__group">
                 <label for="" class="form__label">Confirm password</label>
-                <input type="password" class="form__input" placeholder="Confirm your password" name="ConfirmedPassword">
+                <input type="password" class="form__input" placeholder="Confirm your password" name="ConfirmedPassword" required>
             </div>
 
             <div class="form__radio">
@@ -44,7 +44,7 @@
 
             <div class="form__text">
                 <label for="text_1">Your biography</label>
-                <textarea name="" id="text_1" maxlength="180" rows="6" name="biography"></textarea>
+                <textarea id="text_1" maxlength="180" rows="6" name="biography" placeholder="max 180 symbols"></textarea>
             </div>
 
             <div class="form__checkbox">
@@ -62,6 +62,63 @@
                 <button type="submit">submit</button>
                 <button type="reset">reset</button>
             </div>
+            <input type="hidden" name="author" value="SergioVediankin">
+        </form>
+        <form action="" class="form" method="post">
+            <h1 class="form__title">Registration(Post)</h1>
+            <div class="form__group">
+                <label for="" class="form__label">Name</label>
+                <input type="text" class="form__input" name="UserName" required>
+            </div>
+
+            <div class="form__group">
+                <label for="" class="form__label">Email</label>
+                <input type="text" class="form__input" name="Email" required>
+            </div>
+
+            <div class="form__group">
+                <label for="" class="form__label">Password</label>
+                <input type="password" class="form__input" placeholder="Enter password" name="password" required>
+            </div>
+
+            <div class="form__group">
+                <label for="" class="form__label">Confirm password</label>
+                <input type="password" class="form__input" placeholder="Confirm your password" name="ConfirmedPassword" required>
+            </div>
+
+            <div class="form__radio">
+                <div class="radio">
+                  <input id="radio-3" name="male" type="radio">
+                  <label for="radio-3" class="radio-label">Male</label>
+                </div>
+              
+                <div class="radio">
+                  <input id="radio-4" name="male" type="radio">
+                  <label  for="radio-4" class="radio-label">Female</label>
+                </div>
+            </div>
+
+            <div class="form__text">
+                <label for="text_1">Your biography</label>
+                <textarea id="text_1" maxlength="180" rows="6" name="biography" placeholder="max 180 symbols"></textarea>
+            </div>
+
+            <div class="form__checkbox">
+                <div>
+                    <input type="checkbox" name="terms" id="checkbox_3">
+                    <label for="checkbox_3">I agree with Terms and Conditions</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="news" id="checkbox_4">
+                    <label for="checkbox_4">Subscribe to our newsletter</label>
+                </div>
+            </div>
+
+            <div class="form__button">
+                <button type="submit">submit</button>
+                <button type="reset">reset</button>
+            </div>
+            <input type="hidden" name="author" value="SergioVediankin">
         </form>
     </div>
 </body>
